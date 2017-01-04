@@ -14,14 +14,13 @@ input, select, button {vertical-align:middle;}
 input[type="text"], input[type="email"],input[type="url"], input[type="search"],input[type="password"], select, textarea{border:1px solid #c8c8c8;}
 address, em{font-style:normal;}
 h1, h2, h3, h4, h5, h6, strong{font-size:100%; font-weight:normal;}
-strong{font-weight: bold; color:#7d0849;}
+strong{ color:#7d0849;}
 .clearFix:after{content:""; display:block;clear:both;}
 .clearFix{*zoom:1;}
 button, input[type="button"], input[type="submit"], input[type="reset"]{cursor:pointer;}
 table{border-collapse:collapse;border-spacing:0;width: 100%;}
 th{font-weight: normal;}
 textarea{resize:none;vertical-align: middle;padding: 2px;}
-
 *,
 *:after,*:before {
     box-sizing: border-box;
@@ -52,7 +51,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header_top #util_menu ul li{font-weight: bold;float: left;margin-right: 25px;}
 #header_top #util_menu ul li a{position: relative;padding-right: 14px;}
 #header_top #util_menu ul li a:before{display:inline-block;content: "\f004"; font-family: 'fontello'; color:#7d0849;position: absolute;top: 0;right:0;}
-#header_top #util_menu ul li a:first-chil:before{content: "\f005";}
+#header_top #util_menu ul li a:first-child:before{content: "\f005";}
 #header_top #util_menu ul li a{ color:#7d0849;}
 #header_top label{font-size: 10px;position: absolute;text-outline: 2px;left: 4px;color: #a9a9a9;}
 #header_top input{width: 135px; height: 30px;border: none;background-color: #eef4c4;font-size: 12px;padding-left: 10px;}
@@ -69,13 +68,11 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header #gnb li:before{display: inline-block;width: 1px;height: 21px;}
 #header #gnb li a:hover, #header #gnb li a:focus{border-bottom: 4px solid #7d0849;color: #7d0849;}
 
-
-/*#container{background-color: yellowgreen;}*/
+/*#container{background-color: #ddd;}*/
 
 
 
 /*푸터*/
-
 #footer{background-color: aqua;margin: 0 auto;}
 #footer .share_box_wrap{width: 100%;background-color: #ebedec;height: 46px;line-height: 46px;border-top: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;}
 #footer .share_box_wrap .share_box{max-width: 960px;margin: 0 auto;text-align: center;}
@@ -107,8 +104,9 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 url(../images/main/bg_visual.jpg) center 30% no-repeat;
 -webkit-background-size: cover; background-size: cover;width: 100%; height: 431px;}
 #container_wrap .main_visual{max-width: 960px; margin: 0 auto;}
+#container_wrap .main_visual a:hover{opacity: 1;}
 #container_wrap .main_visual a{display: inline-block;padding: 28px 25px;background: #00aeef; opacity: 0.8; color: #fff;width: 38.2%;margin-top:85px;}
-#container_wrap .main_visual p:first-child{font-size: 32px;font-weight: bold; margin-bottom: 30px;}
+#container_wrap .main_visual p:first-child{font-size: 32px;font-weight: 450; margin-bottom: 30px;}
 #container_wrap .main_visual p:first-child+p{font-size: 14px;margin-bottom:11px; }
 #container_wrap .main_visual p:first-child+p+p{font-size: 11px;}
 #container_wrap .content_1 {width: 100%; height: 211px;background: #ebedec;position: relative;}
@@ -144,6 +142,7 @@ url(../images/main/bg_visual.jpg) center 30% no-repeat;
 .promotion_header .lastest_promotion{font-size: 22px;display: inline-block;vertical-align: middle;}
 .promotion_header .destination_list{display: inline-block;}
 .promotion_header .destination_list select{background: none;font-size: 22px;border: none;}
+.main_prm{margin-bottom: 39px;}
 .main_prm .cover{width: 61.98%;float: left;}
 .main_prm .cover img{width: 100%;}
 .main_prm .description{width:38.02%;float: left;padding-left: 5.833%;}
@@ -151,6 +150,37 @@ url(../images/main/bg_visual.jpg) center 30% no-repeat;
 .main_prm .description h4 span:first-child{font-weight: bold;}
 .main_prm .description .item{padding-bottom: 20px;border-bottom: 1px solid #c6c2c1;}
 .description .group .pmt{color: #7d0849;font-weight: bold;margin-bottom: 10px;}
-.description .group .pmt+a{color: #9aa73e;font-size: 19px;font-weight: bold;}
+.description .group .pmt+a{color: #9aa73e;font-size: 19px;}
 .description .group .f_cls{font-size: 16px;margin-top: 8px;}
 .description .link{font-size: 16px;margin-top: 19px;}
+.secondary_prm {width: 33.3333%; height: 170px;float: left;margin-bottom: 30px;}
+.secondary_prm .cover_img{width:41.875%;float: left;}
+.secondary_prm .cover_img img{width: 100%;}
+.secondary_prm .information{width:40.937%;float: left; }
+.secondary_prm .information h4{font-size: 19px;margin-bottom: 5px;}
+.secondary_prm .information .desc{height: 30px;font-size: 12px;color: #7d0849;font-weight: bold;}
+.secondary_prm .information .desc+a{font-size: 17px;color: #9aa73e;}
+.secondary_prm .information .flight_class{font-size: 12px;border-bottom: 1px solid #c6c2c1;padding-top: 7px;padding-bottom: 8px;margin-bottom: 6px;}
+.secondary_prm .information .guide{font-size: 14px;}
+.secondary_prm .information{margin-left: 4.375%;}
+.trip_promotion .term_service{font-size:12px; text-align: center;margin-bottom: 22px;}
+.service_info{font-size: 17px; text-align: center;margin-bottom:32px;}
+.service_info a{display: inline-block;padding: 12px 75px;color: #7d0849;text-align: center;border-top: 1px solid #c6c2c1;border-bottom: 1px solid #c6c2c1;margin: 0 31px;}
+.nabi_point{width: 100%;height: 259px;background: #ebedec;margin-bottom: 34px;}
+.nabi_point .promotion_img{width: 50%;height: 259px; float: left;background: url(../images/main/bg_prm_1.jpg) center center no-repeat;background-size: cover;}
+.nabi_point .promotion_img+a{width: 50%;float: right;padding:0 4.375%;padding-top: 54px;}
+.nabi_point h3,.lent_a_car h3,.travel h3{font-size: 24px;margin-bottom: 18px;}
+.lent_a_car{width: 100%;height: 259px;background: #ebedec;margin-bottom: 34px;font-size: 16px;}
+.lent_a_car .promotion_img{width: 50%;height: 259px; float: left;background: url(../images/main/bg_prm_2.jpg) center center no-repeat;background-size: cover;}
+.lent_a_car .details,.travel .details{width: 50%;float: right;margin-top: 35px;padding: 0 4.375%;}
+.travel{width: 100%;height: 259px;background: #ebedec;font-size: 16px; margin-bottom: 65px;}
+.details{position: relative;}
+.travel .promotion_img{width: 50%;height: 259px; float: left;background: url(../images/main/bg_prm_3.jpg) center center no-repeat;background-size: cover;}
+.more{width: 156px;display: block;border: 1px solid #7d0849;padding: 13px 30px;color: #7d0849;font-size: 14px;margin-top: 24px;}
+.more:before{content: "\f006";display: inline-block;width: 10px; height: 10px;font-family: 'fontello'; color:#7d0849;position: relative;top: 0;left: 81px;}
+.news_letter_wrap{}
+.news_letter_wrap .news_letter{width: 100%;margin: 0 auto;}
+.news_letter h3{color: #00aeef;font-size:28px;text-align: center;margin-bottom: 16px;}
+.news_letter .new_header{text-align: center;margin-bottom: 13px;}
+.subscription_login .radio_group label{margin-right: 32px;}
+.subscribe_wrap {}

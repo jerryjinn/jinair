@@ -115,7 +115,7 @@
               </select>
             </div>
           </div>
-          <ul>
+          <ul class="clearFix">
             <li class="main_prm clearFix">
               <div class="cover"><img src="images/main/trip_main.png" alt="괌"></div>
               <div class="description">
@@ -143,11 +143,11 @@
                 <a href="#" class="guide">싱가포르 가이드보기</a>
               </div>
             </li>
-            <li class="secondary_prm">
+            <li class="secondary_prm clearFix">
               <div class="cover_img"><a href="#"><img src="images/main/trip_2.png" alt="볼리비아"></a></div>
               <div class="information">
                 <h4>볼리비아</h4>
-                <div class="desc">남미 4개국 15일(칼라파테 빙하와 우유니 소금사막)</div>
+                <div class="desc">남미 4개국 15일(우유니 소금사막)</div>
                 <a href="#" class="price">항공편 <br/>874,200원부터</a>
                 <div class="flight_class">일반석</div>
                 <a href="#" class="guide">남미 가이드보기</a>
@@ -247,8 +247,8 @@
               <div class="cover_img"><a href="#"><img src="images/main/trip_12.png" alt="대만"></a></div>
               <div class="information">
                 <h4>대만</h4>
-                <div class="desc">SUPERSAVER &#38; 포켓 와이파이 1일 무료 사용 혜택</div>
-                <a href="#" class="price">항공편<br/>341,800 원 부터</a>
+                <div class="desc">포켓 와이파이 1일 무료 사용 혜택</div>
+                <a href="#" class="price">항공편<br/>341,800원부터</a>
                 <div class="flight_class">일반석</div>
                 <a href="#" class="guide">타이베이 가이드 보기 </a>
               </div>
@@ -263,7 +263,7 @@
             <a href="#">취항지 안내</a>
           </div>
         </div>
-        <div class="nabi_point">
+        <div class="nabi_point clearFix">
           <div class="promotion_img"></div>
           <a href="#">
             <h3>
@@ -275,18 +275,18 @@
             </h3>
           </a>
         </div>
-        <div class="lent_a_car">
+        <div class="lent_a_car clearFix">
           <div class="promotion_img"></div>
           <div class="details">
-            <h3>눈부시게 아름다운 괌</br>걱정없이 24시간 신나게 달려보자!</h3>
+            <h3>눈부시게 아름다운 <strong>괌,</strong> 걱정없이 <strong>24시간</strong> 신나게 달려보자!</h3>
             <div class="description">
               지니텔 여행, 그리고 간편함 하나더,<br/>
               진에어 지니텔 여행쇼핑
-              <a href="#">자세히보기</a>
+              <a class="more" href="#">자세히보기</a>
             </div>
           </div>
         </div>
-        <div class="travel">
+        <div class="travel clearFix">
           <div class="promotion_img"></div>
           <div class="details">
             <h3>
@@ -294,7 +294,10 @@
               <br/>      
               <strong>FUN</strong>하게 떠는 <strong>남미여행</strong>!
             </h3>
-            <a href="#">자세히보기</a>
+            고객님들은 위한 현지 라운지 11대 특전 무료 제공
+            <br/>
+            쏙!쏙! 필요한 사항만 모아서 실속있게 떠나자!
+            <a class="more" href="#">자세히보기</a>
           </div>
         </div>
         <div class="news_letter_wrap">
@@ -303,54 +306,59 @@
             <div class="new_header">회원 전용 최신 혜택을 이메일로 직접 받아 보세요.</div>
             <div class="subscription_login">
               <div class="radio_group">
-                <input type="radio" name="member_chk" id="no_member">
+                <input type="radio" name="member_chk" id="no_member" checked="checked">
                 <label for="no_member">구독하시려면 계정을 등록하세요</label>
                 <input type="radio" name="member_chk" id="member">
                 <label for="member">이미 등록하셨나요? 로그인하여 구독 신청</label>
               </div>
             </div>
+
             <form action="#" method="post">
-              <fieldset>
-                <legend>비회원 뉴스레터 구독 신청</legend>
-                <div class="customer_gender">
-                  <select name="" id="">
-                    <option value="Mr">Mr</option>
-                    <option value="">Miss</option>
-                    <option value="">Ms</option>
-                    <option value="">Mrs</option>
-                    <option value="">Dr</option>
-                    <option value="">Professor</option>
-                    <option value="">Master</option>
-                  </select>
-                </div>
-                <div class="customer_first_name">
-                  <label for="customer_first_name">이름</label>
-                  <input type="text" name="customer_first_name" id="customer_first_name">
-                </div>
-                <div class="customer_first_name">
-                  <label for="lascustomer_first_namet_name">성</label>
-                  <input type="text" name="customer_first_name" id="customer_first_name">
-                </div>
-                <div class="customer_email">
-                  <label for="customer_email">이메일</label>
-                  <input type="text" name="customer_email" id="customer_email">
-                </div>
-                <div class="legal_notice">
-                  <input type="checkbox" name="legal_notice" id="legal_notice" checked>
-                  <label for="legal_notice">
+              <div class="subscribe_wrap">
+                <fieldset>
+                  <legend>비회원 뉴스레터 구독 신청</legend>
+                  <div class="customer_gender">
                     <span>
-                      진에어가 제공하는 여행 및 고객 우대 프로그램 행사, 프로모션 및 뉴스를 받아 보려면 등록된 고객 계정을 만드세요. 진에어의 
-                      <a href="#">개인정보 취급방침</a>
-                      및 
-                      <a href="#">약관과 조건</a>
-                      새 창에서 열기이 적용됩니다. 개인 정보 수집 및 이용에 관한 
-                      <a href="#">고지 내용 및 유의사항</a>
-                      을 확인하였으며 이에 동의합니다.
-                    </span>
-                  </label>
-                </div>
-                <button type="submit">신청</button>
-              </fieldset>
+                      <select name="" id="">
+                          <option value="Mr">Mr</option>
+                          <option value="">Miss</option>
+                          <option value="">Ms</option>
+                          <option value="">Mrs</option>
+                          <option value="">Dr</option>
+                          <option value="">Professor</option>
+                          <option value="">Master</option>
+                        </select>
+                      </span>
+                  </div>
+                  <div class="customer_first_name">
+                    <label for="customer_first_name">이름</label>
+                    <input type="text" name="customer_first_name" id="customer_first_name">
+                  </div>
+                  <div class="customer_first_name">
+                    <label for="lascustomer_first_namet_name">성</label>
+                    <input type="text" name="customer_first_name" id="customer_first_name">
+                  </div>
+                  <div class="customer_email">
+                    <label for="customer_email">이메일</label>
+                    <input type="text" name="customer_email" id="customer_email">
+                  </div>
+                  <div class="legal_notice">
+                    <input type="checkbox" name="legal_notice" id="legal_notice" checked>
+                    <label for="legal_notice">
+                      <span>
+                        진에어가 제공하는 여행 및 고객 우대 프로그램 행사, 프로모션 및 뉴스를 받아 보려면 등록된 고객 계정을 만드세요. 진에어의 
+                        <a href="#">개인정보 취급방침</a>
+                        및 
+                        <a href="#">약관과 조건</a>
+                        새 창에서 열기이 적용됩니다. 개인 정보 수집 및 이용에 관한 
+                        <a href="#">고지 내용 및 유의사항</a>
+                        을 확인하였으며 이에 동의합니다.
+                      </span>
+                    </label>
+                  </div>
+                  <button type="submit">신청</button>
+                </fieldset>
+              </div>
             </form>
             <form action="#" method="post">
               <fieldset>
