@@ -52,8 +52,7 @@
         </a>
       </div>
     </div>
-    <div id="container">
-        <div class="content_1">
+    <div class="content_1">
         <div class="main_tab">
           <h3 class="blind">항공권 예약 </h3>
             <h4><button>국내선</button></h4>
@@ -81,43 +80,43 @@
                       <input type="text" name="flight_destination" id="flight_destination">
                     </div>
                   </div>
-                  <div class="flight_date clearFix">
+                  <div class="flight_date">
                     <div class="btn_date_picker">
                       <span>출국일</span>
-                      <button placeholder="2017년 1월 1일">출국일</button>
+                      <button><span>2017년 1월 1일</span></button>
                     </div>
                     <div class="btn_date_picker">
                       <span>귀국일</span>
-                      <button placeholder="2017년 2월 1일">귀국일</button>
+                      <button><span>2017년 2월 1일</span></button>
                     </div>
                   </div>
                   <div class="passenger">
                     <span>승객/좌석등급</span>
-                    <button placeholder="1 승객/프리미엄">승객/좌석등급</button>
+                    <button><span>1 승객/프리미엄</span></button>
                   </div>
                   <button type="submit">항공편 검색</button>
                 </fieldset>
               </form>
             </div>
         </div>
-      </div>
+    </div>
+    <div id="container">
       <div class="content_2">
         <div class="trip_promotion">
-          <h3>진에어 프로모션</h3>
+          <h3 class="blind">진에어 프로모션</h3>
           <div class="promotion_header">
             <div class="lastest_promotion">최신 항공 특가 (왕복) - 출발 도시 :</div>
             <div class="destination_list">
-              <label for="destination">출발도시</label>
+              <label for="destination" class="blind">출발도시</label>
               <select name="destination" id="destination">
                 <option value="서울">서울</option>
                 <option value="부산">부산</option>
                 <option value="제주">제주</option>
               </select>
-              <button>검색</button>
             </div>
           </div>
           <ul>
-            <li class="main_prm">
+            <li class="main_prm clearFix">
               <div class="cover"><img src="images/main/trip_main.png" alt="괌"></div>
               <div class="description">
                 <h4>
@@ -126,9 +125,9 @@
                 </h4>
                 <div class="item">
                   <div class="group">
-                    <div>몰디브 2인 동반 비즈니스석 특가</div>
+                    <div class="pmt">몰디브 2인 동반 비즈니스석 특가</div>
                     <a href="#">항공편 2,717,800원부터</a>
-                    <div>비즈니스석</div>
+                    <div class="f_cls">비즈니스석</div>
                   </div>
                 </div>
                 <div class="link"><a href="#">몰디브 가이드 보기</a></div>
