@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.wrapper{border: none;}
+.wrapper p:first-child{color: #7d0849;}
+.wrapper h3{color: #4c4c4c;}
+.wrapper h3+p{margin-top: 10px;}
+.lent_int {padding-top: 32px;background: #ebedec;}
+.lent_int .section_txt{float: left;padding:20px 20px 0 0;}
+.lent_int .section_txt p{margin-bottom: 20px;}
+.lent_int .lent_img{float: right;}
+.reservation_benefit{margin-top: 45px;}
+.reservation_benefit .bnf_title h4{font-size: 29px;color: #7d0849;margin-bottom: 20px;}
+.reservation_benefit .bnf_contents ul li{float: left;width: 33.3333%;}
+.reservation_benefit .bnf_contents ul li div{background: #fff;height: 170px;}
