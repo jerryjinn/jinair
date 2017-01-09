@@ -1,0 +1,89 @@
+<? include "inc/top.html" ?>
+  <title>진에어 | 여행정보</title>
+  <link rel="stylesheet" type="text/css" href="css/trip.css" media="all">
+ </head>  
+ <body>
+  <!--헤더영역-->
+  <? include "inc/header.html" ?>
+  <!--//헤더영역-->
+  <!--컨테이너영역-->
+  <div id="container_wrap">
+    <div class="std_section_wrap">
+      <div class="std_section">
+        <div class="header_img">
+          <div class="header_title">
+            <h3><strong>페루,</strong> 남미</h3>
+          </div>  
+          <div class="header_navigation">
+            <ul>
+              <li>다낭가이드<img src="" alt=""></li>
+              <li><a href="#"><img src="" alt="">항공편</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="guide_info std_section_wrap">
+      <div class="std_section">
+        <div class="summary">
+          <p>지구 반대편에 있는 경이로운 대륙, 남미페루/볼리비아/칠레/아르헨티나/브라질/파타고니아 잉카제국의 천년의 고도, 잃어버린 공중도시 남미의 절대 하이라이트!!</p>
+        </div>
+        <div class="gallery_container">
+          <div class="gallery_img">
+            <div class="slideWrap">
+              <ul>
+                <li><a href="#"><img src="" alt=""></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="gallery_info">
+            <div class="img_num"><span>1</span>/4</div>
+            <div class="detail">우유니사막</div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="things_to_do std_section_wrap">
+      <div class="std_section">
+        <div class="things_header">
+          <h3>가볼만한 곳</h3>
+          <p>이 도시의 추천 여행지 및 하이라이트를 선정했습니다.</p> 
+          <div>
+            검색하기
+            <div class="things_list">
+              <span>남미 가볼만한곳 </span>
+              <select name="things_list" id="things_list">
+                <option value="남미 가볼만한곳">남미 가볼만한곳</option>
+                <option value="Eat">Eat</option>ㄹ
+                <option value="Do">Do</option>
+                <option value="See">See</option>      
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="things_container">
+          <div class="item">
+            <div class="picture">
+            <img src="images/trip/trv_img_1.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_tab_wrap">
+      <div class="main_tab">
+      <!--항공권 예약-->
+      <? include "inc/reservation.html" ?>
+      <!--//항공권 예약-->
+      </div>
+    </div>
+  </div> 
+  <!--//컨테이너영역-->
+  <!--푸터영역-->
+  <? include "inc/footer.html" ?>
+  <!--//푸터영역-->
+ </body>
+</html>
