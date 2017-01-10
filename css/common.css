@@ -14,7 +14,6 @@ input, select, button {vertical-align:middle;}
 input[type="text"], input[type="email"],input[type="url"], input[type="search"],input[type="password"], select, textarea{border:1px solid #c8c8c8;}
 address, em{font-style:normal;}
 h1, h2, h3, h4, h5, h6, strong{font-size:100%; font-weight:normal;}
-strong{ color:#7d0849;}
 .clearFix:after{content:""; display:block;clear:both;}
 .clearFix{*zoom:1;}
 button, input[type="button"], input[type="submit"], input[type="reset"]{cursor:pointer;}
