@@ -94,6 +94,11 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #footer .social_icons li{float: left;margin: 0 7.425%;}
 #footer .footer_message{font-size: 12px;float: right;width: 87%;margin: 87px 0 40px 0;}
 #footer .footer_message p{margin-bottom:3px;}
+.al_container{background: #ebedec;}
+.al_container table {color: #000;}
+.al_container table tr{background: #c6c2c1;height: 80px;}
+.al_container table tr.returning th{border-right: 1px dotted #fff;border-bottom: 1px solid #fff;}
+.al_container table tr.returning td {}
 
 
 /*항공권 예약*/
