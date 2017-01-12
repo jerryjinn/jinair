@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#container_wrap{background: #ebedec;width: 100%;}
+.sign_in{background: #ebedec;width: 100%;}
 .join_wrap{max-width: 960px;height: 369px;margin: 0 auto;}
 .join_top p{padding:12px 0;width: 100%;font-size: 12px;}
 .join_top form{width: 63.5%;padding-right: 2.708%;float: left;background: url(../images/join/bg_login_bar.png) right 0 no-repeat;}

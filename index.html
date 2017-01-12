@@ -1,49 +1,6 @@
 
 <? include "inc/top.html" ?>
   <title>JINAIR</title>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script type="text/javascript">
-  (function(){
-    /*반응형 GNB*/
-    $.fn.rsGnb = function(opt){
-      var mode = opt.mode;
-      var ts = $(this);
-      if(mode == "pc tablet"){
-        var selector = "#"+ts.attr("id")+">ul>li>a" + ",.tablet"+" #"+ts.attr("id")+">ul>li>a";
-        console.log(selector);
-        $(document).on("mouseover focus",selector,function(){
-          //alert(342);
-          var myThis = $(this);
-          $(this).closest("ul").find("ul:visible").hide()
-          .end().find("a.on").removeClass("on");
-            //end 그전까지 끊어줌,마지막에접근한것
-          myThis.next().show();
-          $(this).addClass("on");
-        });
-        var selector2 = "#"+ts.attr("id")+",.tablet"+" #"+ts.attr("id");
-        $(document).on("mouseleave", selector2, function(){
-          console.log(2323);
-          $("ul",this).find("ul:visible").hide()
-          .end().find("a.on").removeClass("on");
-        });
-      }
-      $(document).on("click",".ico_f_show_gnb",function(){
-        $("#gnb").animate({right:0},500);
-        $(".dim_gnb").fadeIn("fast");
-      });
-      $(document).on("click",".mobile_gnb_close",function(){
-        $("#gnb").animate({right:"-500px"},500);
-        $(".dim_gnb").fadeOut("fast");
-      });
-    }
-    $(function(){
-      $(window).resize();
-      $("#gnb").rsGnb({mode:"pc tablet"});
-    });
-  }());
-  </script>
  </head>  
  <body>
   <!--헤더영역-->
