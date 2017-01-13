@@ -25,7 +25,6 @@
 .al_bottom .reference h3{color: #7d0849;font-weight: bold;margin-bottom: 13px;}
 .al_bottom .reference ul li{padding-left:8px;background: url(../images/airline_ticket/bullet_circle.png) 0 center no-repeat;margin-bottom: 18px;}
 .al_bottom .continue_box{background: #ebedec;position: relative;padding:27px 1.6%;margin-top: 40px;}
-.al_bottom .continue_box p{font-size: 14px;font-weight: bold;	padding-bottom: 	3px;}
+.al_bottom .continue_box p{font-size: 14px;font-weight: bold;	padding-bottom:3px;}
 .al_bottom .continue_box a{width:16.145%;height: 45px;line-height: 45px;text-align: center;	color: #fff;position:absolute;right: 1.6%;top:27px; background: #7d0849;}
-.al_bottom .prev_page{font-size: 	14px;color: #7d0849;margin:10px 0;}
-{display: none;	}
+.al_bottom a.prev_page{display: block;font-size: 14px;color: #7d0849;height: 30px;line-height: 30px;margin:10px 0;background: url(../images/airlineTicket_2/arrow_prev.png) 0 center no-repeat;padding-left: 35px;}

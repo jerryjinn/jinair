@@ -1,4 +1,37 @@
 $(function(){
+
+
+
+ 
+   /*로그인, LANGUAGE 창 열리기*/
+  $("#util_menu a.register").on("click",function(){
+   var myReply = $(this).closest("#header_top").next();
+   if (myReply.is(":hidden")){
+     $("#util_menu ul li .register").removeClass("on");
+     $(this).addClass("on");
+     $(".sign_in:visible").slideUp("fast");
+     myReply.slideDown("fast");
+   } else{
+     $("#util_menu ul li .register").removeClass("on");
+     $(".sign_in:visible").slideUp("fast");
+   }
+  });
+  $("#util_menu ul li:first-child a").on("click",function(){
+   var myReply = $(this).closest("header").prev();
+   if (myReply.is(":hidden")){
+     $("#util_menu ul li:first-child a").removeClass("on");
+     $(this).addClass("on");
+     $(".language:visible").slideUp("fast");
+     myReply.slideDown("fast");
+   } else{
+     $("#util_menu ul li:first-child a").removeClass("on");
+     $(".language").slideUp("fast");
+   }
+  });
+
+   /*placeholder사라짐*/
+
+
   /*
   @Evnet:사이즈 감지 이벤트
   */
@@ -52,19 +85,62 @@ $(function(){
       $(window).resize();
       $("#gnb").rsGnb({mode:"pc tablet"});
     });
+  /*탭메뉴 */
+  function TabmenuFnc(objName,idx){
+    this.myObjName = objName;
+    this.myIdx = idx;
+    this.myObj = this.myObjName + ":eq("+this.myIdx+")";
+    this.actButton = $(this.myObj).find("h3:first button.tab_btn, h4:first button.tab_btn");
+    this.bindEvent();
+  }
+  TabmenuFnc.prototype.bindEvent = function(){
+    console.log(this.myObj + " h3 a, " + this.myObj + " h4 a");
+    $(document).on("click",this.myObj + " h3 button.tab_btn, " + this.myObj + " h4 button.tab_btn",$.proxy(this.tabEvntHnd,this)); // $.proxy( ㅇ ,this);
+  };
+  TabmenuFnc.prototype.tabEvntHnd = function(e){
+    e.preventDefault();
+    var $myButton = $(e.target);
+    var $myThis = $(e.target).closest("button");
+    var $myDiv = $myThis.parent().next();
+    var $visibleDiv = $(this.myObj+ " .main_tab h4+div:visible")
+    //console.log(e.myThis);
+    //alert(34);
+    //보이는 div 요소는 숨겨라
+    
+    //클릭한 탭에 해당하는 div는 보여라
+    if($myDiv.is(":hidden")){
+      $visibleDiv.hide();
+      $myDiv.show();
+      var btn_1 = this.actButton.css({"background":"#4c4c4c"}).css({"color":"#ebedec"});
+      this.actButton.css("btn_1");
+      var btn_2 = $myButton.css({"background":"#ebedec"}).css({"color":"#4c4c4c"});
+      $myButton.attr("btn_2");
+      this.actButton = $myButton;
+    }
+  } 
 
-  /*로그인, LANGUAGE 창 열리기*/
-  $("#util_menu a.register").on("click",function(){
-   var myReply = $(this).closest("#header_top").next();
-   console.log(myReply);
-   if (myReply.is(":hidden")){
-     $("#util_menu ul li .register").removeClass("on");
-     $(this).addClass("on");
-     $(".sign_in:visible").slideUp("fast");
-     myReply.slideDown("fast");
-   } else{
-     $("#util_menu ul li .register").removeClass("on");
-     $(".sign_in:visible").slideUp("fast");
-   }
-  });
+  /*
+  var t1 = new TabmenuFnc();
+  var t2 = new TabmenuFnc(); 
+  //쓰는 대신 배열로 쓴다.  
+  */
+  //var t1 = new TabmenuFnc(); //객체생성할 때 new 써주어야함
+  //each메서드는 로딩이 된 후 사용가능하다
+    $(function(){
+      //console.log($("div[data-type=tabmenu]"));
+      var arrTab = [];
+      var tabText = "div[data-type=tabmenu]";
+
+      var tabMenuWrap = $("div[data-type=tabmenu]");
+      $.each(tabMenuWrap,function(i,o){
+        arrTab[i] = new TabmenuFnc(tabText, i);   
+      });
+      //console.log(arrTab);
+    });
+
+ 
 });
+
+
+
+
