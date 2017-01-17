@@ -7,9 +7,9 @@ $(function(){
       $(window).on("scroll",function(){
         var scT = $(this).scrollTop();
         var header  = $("#header");
-        if($(window).scrollTop() >= 1 ){
+        if($(window).scrollTop() >= 90 ){
           header.addClass("active");
-          /*header.css({marginTop: + $(window).scrollTop() + "px"});*/
+          //header.css({marginTop: + $(window).scrollTop() + "px"});
         } else{
           header.removeClass();
           header.css({marginTop: + 0 + "px"});
@@ -72,7 +72,7 @@ $(function(){
   $.fn.rsGnb = function(opt){
     var mode = opt.mode;
     var ts = $(this);
-    if(mode == "pc tablet"){
+    if(mode == "pc"){
       var selector = "#"+ts.attr("id")+">ul>li>a" + ",.tablet"+" #"+ts.attr("id")+">ul>li>a";
       $(document).on("mouseover focus",selector,function(){
         var myThis = $(this);
