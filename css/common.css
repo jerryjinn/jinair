@@ -61,14 +61,14 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 #header_top label{font-size: 10px;position: absolute;text-outline: 2px;left: 4px;color: #a9a9a9;}
 #header_top form:focus label{display: block;}
 #header_top input{width: 135px; height: 30px;border: none;background-color: #eef4c4;font-size: 12px;padding-left: 10px;opacity:1;}
-#header_top input:hover{background: #fff;}
-#header_top input:focus{background: #fff;}
-#header_top input::-webkit-input-placeholder{opacity:0;}
-#header_top input:-moz-placeholder{opacity:0;}
-#header_top input::-moz-placeholder{opacity:0;}
-#header_top button{position: absolute;top: 6px;right: 10px;background: none;}
-#header_top button span{text-indent: -9999px; position: absolute; left: -9999px;}
-#header_top button:before{content: "\e801"; font-family: 'fontello';color:#4c4c4c;}
+#header_top #util_menu input:hover{background: #fff;}
+#header_top #util_menu input:focus{background: #fff;}
+#header_top #util_menu input::-webkit-input-placeholder{opacity:0;}
+#header_top #util_menu input:-moz-placeholder{opacity:0;}
+#header_top #util_menu input::-moz-placeholder{opacity:0;}
+#header_top #util_menu button{position: absolute;top: 6px;right: 10px;background: none;}
+#header_top #util_menu button span{text-indent: -9999px; position: absolute; left: -9999px;}
+#header_top #util_menu button:before{content: "\e801"; font-family: 'fontello';color:#4c4c4c;}
 #header #gnb{height: 50px; width: 100%;border-bottom: 2px solid #c6c2c1;}
 #header #gnb{max-width: 960px;margin: 0 auto;text-align: center;position: relative;}
 #header #gnb>ul>li{ float: left;width: 16.6666%;background: url(../images/common/bg_gnb_bar.png) 0 50% no-repeat;}
