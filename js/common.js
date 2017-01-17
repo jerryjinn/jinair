@@ -2,6 +2,23 @@ $(function(){
 
 
 
+  /*스크롤시 헤더 메뉴 슬라이드*/
+      
+      $(window).on("scroll",function(){
+        var scT = $(this).scrollTop();
+        var header  = $("#header");
+        console.log($(window).scrollTop());
+        if($(window).scrollTop() >= 100 ){
+          header.addClass("active");
+          header.css({marginTop: + $(window).scrollTop() + "px"});
+          header.css({"position":"fixed"});
+        } else{
+          header.removeClass();
+          header.css({marginTop: + 0 + "px"});
+        }
+      })
+
+
  
    /*로그인, LANGUAGE 창 열리기*/
   $("#util_menu a.register").on("click",function(){
@@ -137,6 +154,8 @@ $(function(){
       });
       //console.log(arrTab);
     });
+
+
 
  
 });
