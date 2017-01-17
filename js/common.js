@@ -7,16 +7,14 @@ $(function(){
       $(window).on("scroll",function(){
         var scT = $(this).scrollTop();
         var header  = $("#header");
-        console.log($(window).scrollTop());
-        if($(window).scrollTop() >= 100 ){
+        if($(window).scrollTop() >= 1 ){
           header.addClass("active");
-          header.css({marginTop: + $(window).scrollTop() + "px"});
-          header.css({"position":"fixed"});
+          /*header.css({marginTop: + $(window).scrollTop() + "px"});*/
         } else{
           header.removeClass();
           header.css({marginTop: + 0 + "px"});
         }
-      })
+      });
 
 
  
