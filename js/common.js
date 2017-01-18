@@ -53,14 +53,14 @@ $(function(){
   var i = 0;
   $(window).on("resize",function(){
     var b = $("body");
-    var w = $(window).width();
+    var w = $(window).width()+17;
     if( w >= 1024){
       $("#gnb").attr("style","");
-      //$(".dim_gnb").attr("style","");
+      $(".dim_gnb").attr("style","");
       b.attr("class","");
       b.addClass("pc");
 
-    } else if(w >= 480 && w < 1024){
+    } else if(w >= 767 && w < 1024){
       b.attr("class","");
       b.addClass("tablet");
     } else{
@@ -72,8 +72,9 @@ $(function(){
   $.fn.rsGnb = function(opt){
     var mode = opt.mode;
     var ts = $(this);
-    if(mode == "pc"){
+    if(mode == "pc tablet mobile"){
       var selector = "#"+ts.attr("id")+">ul>li>a" + ",.tablet"+" #"+ts.attr("id")+">ul>li>a";
+      console.log(selector);
       $(document).on("mouseover focus",selector,function(){
         var myThis = $(this);
         $(this).closest("ul").find("ul:visible").hide()
@@ -87,18 +88,18 @@ $(function(){
         .end().find("a.on").removeClass("on");
       });
     }
-    $(document).on("click",".ico_f_show_gnb",function(){
-      $("#gnb").animate({right:0},500);
+    $(document).on("click",".m_btn_gnb",function(){
+      $("#gnb").animate({left:0},500);
       $(".dim_gnb").fadeIn("fast");
     });
     $(document).on("click",".mobile_gnb_close",function(){
-      $("#gnb").animate({right:"-500px"},500);
+      $("#gnb").animate({left:"-500px"},500);
       $(".dim_gnb").fadeOut("fast");
     });
   }
   $(function(){
       $(window).resize();
-      $("#gnb").rsGnb({mode:"pc tablet"});
+      $("#gnb").rsGnb({mode:"pc tablet mobile"});
     });
   /*탭메뉴 */
   function TabmenuFnc(objName,idx){
